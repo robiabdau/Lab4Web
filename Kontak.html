@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Sederhana</title>
+    <link rel="stylesheet" href="StyleAbout.css">
+</head>
+<body>
+    <div id="container">
+
+    </div>
+</body>
+<header>
+    <h1>Layout Sederhana</h1>
+</header>
+<nav>
+    <a href="home.html">Home</a>
+    <a href="artikel.html">Artikel</a>
+    <a href="about.html">About</a>
+    <a href="kontak.html"class="active">Kontak</a>
+</nav>
+<section id="hero"></section>
+<section id="wrapper">
+    <section id="main"></section>
+    <aside id="sidebar"></aside>
+</section>
+<body>
+    <header>
+        <h1>Form Isian</h1>
+    </header>
+</body>
+<form action="proses.php" method="post">
+    <fieldset>
+        <legend>Data Pengisi</legend>
+        <p>
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" name="nama">
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
+        </p>
+        <p>
+            <label>Jenis Kelamin</label>
+            <input id="jk_l" type="radio" name="kelamin" value="L" /><label for="jk_l">Laki-laki</label>
+            <input id="jk_p" type="radio" name="kelamin" value="P" /><label for="jk_p">Perempuan</label>
+        </p>
+        <p>
+            <label>Agama</label>
+            <select name='agama' multiple='multiple'>
+                <option value='islam'>Islam</option>
+                <option value='kristen' selected='selected'>Kristen</option>
+                <option value='katholik'>Katholik</option>
+                <option value='hindu'>Hindu</option>
+                <option value='kristen'>Budha</option>
+            </select>
+        </p>
+        <p>
+            <label for="message">Message</label>
+            <textarea id="message" name="Message" cols="20" rows="3"></textarea>
+        </p>
+        <p><input type="submit" value="Kirim"></p>
+    </fieldset>
+</form>
+<style>
+    form p > label {
+        display: inline-block;
+        width: 100px;
+    }
+    form input[type="text"], form textarea {
+        border: 1px solid #197a43;
+    }
+    form input[type="submit"] {
+        border: 1px solid #197a43;
+        background-color: #197a43;
+        color: #ffffff;
+        font-weight: bold;
+        padding: 5px 15px;
+    }
+</style>
+<aside id="sidebar">
+    <div class="widget-box">
+        <h3 class="title">Widget Header</h3>
+        <ul>
+            <li><a href="#">Widget Link</a></li>
+            <li><a href="#">Widget Link</a></li>
+            <li><a href="#">Widget Link</a></li>
+            <li><a href="#">Widget Link</a></li>
+            <li><a href="#">Widget Link</a></li>
+        </ul>
+    </div>
+    <div class="widget-box">
+        <h3 class="title">Widget Text</h3>
+        <p>Vestibulum lorem elit, iaculis in nisl volutpat, malesuada tincidunt
+        arcu. Proin in leo fringilla, vestibulum mi porta, faucibus felis. Integer
+        pharetra est nunc, nec pretium nunc pretium ac.</p>
+    </div>
+</aside>
+<section id="main">
+    <div class="row">
+        <div class="box">
+        <img src="https://dummyimage.com/120/db7d25/fff.png" alt=""class="image-circle">
+        <h3>Heading</h3>
+        <p>Donec sed odio dui. Etiam porta sem malesuada magna molliseuismod.</p>
+        <a href="#" class="btn btn-default">View detail</a>
+    </div>
+    <div class="box">
+        <img src="https://dummyimage.com/120/3e73e6/fff.png" alt=""class="image-circle">
+        <h3>Heading</h3>
+        <p>Donec sed odio dui. Etiam porta sem malesuada magna molliseuismod.</p>
+        <a href="#" class="btn btn-default">View detail</a>
+    </div>
+    <div class="box">
+        <img src="https://dummyimage.com/120/71e6d4/fff.png" alt=""class="image-circle">
+        <h3>Heading</h3>
+        <p>Donec sed odio dui. Etiam porta sem malesuada magna molliseuismod.</p>
+        <a href="#" class="btn btn-default">View detail</a>
+        </div>
+    </div>
+    <hr class="divider" />
+    <article class="entry">
+        <h2>First featurette heading.</h2>
+        <img src="https://dummyimage.com/150/7b8a70/fff.png" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem
+    elit, iaculis in nisl volutpat, malesuada tincidunt arcu. Proin in leo fringilla,
+    vestibulum mi porta, faucibus felis. Integer pharetra est nunc, nec pretium nunc
+    pretium ac.</p>
+    </article>
+        <hr class="divider" />
+    <article class="entry">
+        <h2>First featurette heading.</h2>
+        <img src="https://dummyimage.com/150/7b8a70/fff.png" alt=""
+        class="right-img">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem
+    elit, iaculis in nisl volutpat, malesuada tincidunt arcu. Proin in leo fringilla,
+    vestibulum mi porta, faucibus felis. Integer pharetra est nunc, nec pretium nunc
+    pretium ac.</p>
+    </article>
+
+</section>
+<footer>
+    <p>&copy; 2021 - Universitas Pelita Bangsa</p>
+</footer>
+</html>
